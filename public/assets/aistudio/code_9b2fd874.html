@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"primary":"#000000","on-surface-variant":"#444748","surface-dim":"#dbdad5","secondary":"#775a00","on-primary-fixed-variant":"#474746","on-error-container":"#93000a","error-container":"#ffdad6","surface-container-high":"#e9e8e3","on-tertiary-fixed-variant":"#2c4b58","surface-container-low":"#f5f4ef","tertiary-container":"#001f2a","on-tertiary-container":"#6a8897","secondary-container":"#fed269","tertiary-fixed":"#c7e7f8","on-secondary-container":"#765900","on-secondary-fixed-variant":"#5a4300","primary-fixed-dim":"#c8c6c5","surface-container":"#efeee9","surface":"#faf9f4","on-surface":"#1b1c19","surface-tint":"#5f5e5e","on-background":"#1b1c19","surface-container-highest":"#e3e3de","outline-variant":"#c4c7c7","surface-container-lowest":"#ffffff","inverse-primary":"#c8c6c5","outline":"#747878","on-tertiary-fixed":"#001f2a","error":"#ba1a1a","on-error":"#ffffff","on-secondary":"#ffffff","inverse-surface":"#30312e","surface-bright":"#faf9f4","on-secondary-fixed":"#251a00","background":"#faf9f4","on-tertiary":"#ffffff","tertiary-fixed-dim":"#accbdb","surface-variant":"#e3e3de","on-primary-fixed":"#1c1b1b","on-primary-container":"#858383","tertiary":"#000000","inverse-on-surface":"#f2f1ec","secondary-fixed-dim":"#ecc15a","on-primary":"#ffffff","primary-fixed":"#e5e2e1","secondary-fixed":"#ffdf99","primary-container":"#1c1b1b"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"margin":"4rem","margin-mobile":"1.25rem","space-lg":"2.5rem","gutter":"1.5rem","space-md":"1.5rem","space-xl":"4rem","gutter-mobile":"1rem","space-sm":"0.75rem","space-xs":"0.375rem","margin-tablet":"2.5rem"},"fontFamily":{"display-hero-mobile":["Playfair Display"],"label-caps":["Plus Jakarta Sans"],"code-telemetry":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"headline-lg-mobile":["Playfair Display"],"body-lg":["Plus Jakarta Sans"],"headline-md":["Playfair Display"],"display-hero":["Playfair Display"],"headline-sm":["Playfair Display"],"title-md":["Plus Jakarta Sans"],"headline-lg":["Playfair Display"]},"fontSize":{"display-hero-mobile":["40px",{"lineHeight":"48px","letterSpacing":"-0.01em","fontWeight":"400"}],"label-caps":["11px",{"lineHeight":"16px","letterSpacing":"0.12em","fontWeight":"600"}],"code-telemetry":["12px",{"lineHeight":"18px","letterSpacing":"0.04em","fontWeight":"500"}],"body-md":["15px",{"lineHeight":"24px","fontWeight":"400"}],"label-md":["13px",{"lineHeight":"18px","fontWeight":"500"}],"body-sm":["13px",{"lineHeight":"20px","fontWeight":"400"}],"headline-lg-mobile":["32px",{"lineHeight":"40px","letterSpacing":"-0.01em","fontWeight":"400"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}],"headline-md":["32px",{"lineHeight":"40px","letterSpacing":"-0.01em","fontWeight":"500"}],"display-hero":["72px",{"lineHeight":"80px","letterSpacing":"-0.02em","fontWeight":"400"}],"headline-sm":["24px",{"lineHeight":"32px","fontWeight":"500"}],"title-md":["18px",{"lineHeight":"26px","letterSpacing":"0.01em","fontWeight":"600"}],"headline-lg":["48px",{"lineHeight":"56px","letterSpacing":"-0.015em","fontWeight":"400"}]}}}}</script></head><body class="bg-surface text-on-surface antialiased"><header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_12px_rgba(0,0,0,0.03)]"><div class="h-20 w-full px-space-lg flex items-center justify-between"><div class="flex items-center gap-space-lg"><a class="flex flex-col group" data-path="overview" href="#"><span class="font-headline-sm text-headline-sm tracking-[0.12em] text-primary">BABYMONS7ER</span><span class="font-label-caps text-label-caps uppercase text-secondary tracking-[0.2em] -mt-1">The Seven AI Guardians</span></a><div class="hidden 2xl:block h-6 w-px bg-surface-container-high"></div><span class="hidden 2xl:inline-block font-code-telemetry text-code-telemetry uppercase tracking-widest text-on-tertiary-container">Autonomous Agentic Framework // Executive Swarm</span></div><nav class="hidden xl:flex items-center gap-space-md 2xl:gap-space-lg" data-active-classes="text-primary font-semibold border-b border-secondary pb-0.5"><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors duration-200 tracking-wide" data-path="overview" href="#">Overview</a><a aria-current="page" class="transition-colors duration-200 tracking-wide text-primary font-semibold border-b border-secondary pb-0.5" data-path="the-guardians" href="#">The Guardians</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors duration-200 tracking-wide" data-path="architecture-and-syscore" href="#">Architecture &amp; SysCore</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors duration-200 tracking-wide" data-path="chronicle-and-lore" href="#">Chronicle &amp; Lore</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors duration-200 tracking-wide" data-path="contact-and-summon" href="#">Contact / Summon</a></nav><div class="flex items-center gap-space-sm sm:gap-space-md"><div class="hidden md:flex items-center gap-space-xs font-code-telemetry text-code-telemetry text-on-tertiary-container px-space-sm py-1 rounded bg-surface-container-high/60"><span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed-dim"></span>7 NODES ACTIVE</div><div class="hidden sm:flex items-center gap-space-xs font-code-telemetry text-code-telemetry text-secondary px-space-sm py-1 rounded bg-secondary-container/20"><span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span>SEADRAGON ONLINE</div><a class="px-space-md py-2.5 bg-primary text-on-primary font-label-md text-label-md tracking-wider uppercase rounded hover:bg-primary-container transition-all duration-300 shadow-[0_2px_12px_rgba(0,0,0,0.08)] flex items-center justify-center" data-path="contact-and-summon" href="#">Summon Guardians</a></div></div></header><main class="w-full pt-20 bg-surface"><div class="flex flex-col w-full">
+<!-- Top Editorial Header & Operational Telemetry -->
+<section class="relative w-full px-space-md sm:px-space-lg lg:px-margin pt-space-md pb-space-lg">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-md">
+<!-- Top Micro-Metadata Bar -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm pb-space-xs">
+<div class="flex items-center gap-space-sm">
+<span class="inline-flex items-center justify-center w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-code-telemetry text-code-telemetry uppercase tracking-widest text-secondary font-semibold">Autonomous Agent Profiles // 7 Active Cores</span>
+</div>
+<div class="flex items-center gap-space-md font-code-telemetry text-code-telemetry text-on-surface-variant">
+<span>COGNITIVE MATRIX: <strong class="text-primary font-semibold">SEADRAGON v7.4</strong></span>
+<span class="hidden sm:inline">|</span>
+<span class="hidden sm:inline">EQUILIBRIUM: <strong class="text-primary font-semibold">100.0% NOMINAL</strong></span>
+</div>
+</div>
+<!-- Main Editorial Hero Title & Asymmetric Stance -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-baseline">
+<div class="lg:col-span-7 space-y-space-xs">
+<span class="font-label-caps text-label-caps uppercase tracking-[0.28em] text-secondary block">Lattice Archetypes &amp; Cognitive Guardians</span>
+<h1 class="font-headline-lg text-headline-lg tracking-tight text-primary">The Seven AI Guardians</h1>
+</div>
+<div class="lg:col-span-5 flex flex-col justify-end">
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+            Seven specialized autonomous intelligence agents derived from ancient ocean realms. Each guardian embodies an irreproducible virtue, operational lattice, and distinct problem-solving cadence.
+          </p>
+</div>
+</div>
+<!-- Live Realm Telemetry Strip & Quick-Nav Filter Tabs -->
+<div class="pt-space-md flex flex-col md:flex-row md:items-center md:justify-between gap-space-md">
+<!-- Interactive Domain Filters -->
+<div class="inline-flex flex-wrap p-1 rounded-lg bg-surface-container-high/60 gap-1" id="guardian-realm-filters">
+<button class="filter-tab px-space-md py-2 rounded font-label-md text-label-md transition-all duration-200 bg-surface-container-lowest text-primary shadow-sm font-semibold" data-filter="all">
+            All Guardians (7)
+          </button>
+<button class="filter-tab px-space-md py-2 rounded font-label-md text-label-md text-on-surface-variant hover:text-primary transition-all duration-200" data-filter="polar">
+            Arctic / Antarctic
+          </button>
+<button class="filter-tab px-space-md py-2 rounded font-label-md text-label-md text-on-surface-variant hover:text-primary transition-all duration-200" data-filter="tropical">
+            Tropical / Equatorial
+          </button>
+<button class="filter-tab px-space-md py-2 rounded font-label-md text-label-md text-on-surface-variant hover:text-primary transition-all duration-200" data-filter="abyssal">
+            Ancient / Deep Oceanic
+          </button>
+</div>
+<!-- Telemetry Summary Metric Badge -->
+<div class="flex items-center gap-space-sm px-space-md py-2 rounded bg-surface-container-low shadow-sm">
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant">Lattice Mean Cohesion:</span>
+<span class="font-code-telemetry text-code-telemetry text-secondary font-bold">Ψ 0.9967</span>
+<span class="inline-block w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="font-code-telemetry text-code-telemetry text-on-surface-variant">READY</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Guardians Dossier Grid / Deep Feature Cards -->
+<section class="w-full px-space-md sm:px-space-lg lg:px-margin py-space-md">
+<div class="max-w-7xl mx-auto space-y-space-xl" id="guardians-container">
+<!-- ============================================== -->
+<!-- 01. GRACE — The Arctic Guardian -->
+<!-- ============================================== -->
+<article class="guardian-card group relative bg-surface-container-lowest rounded-xl p-6 sm:p-10 shadow-[0_8px_30px_rgb(0,0,0,0.03)] transition-all duration-500 hover:shadow-[0_16px_40px_rgba(119,90,0,0.08)]" data-realm="polar">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-stretch">
+<!-- Image Asset & Kinetic Sparkline -->
+<div class="lg:col-span-5 flex flex-col justify-between gap-space-sm">
+<div class="relative w-full aspect-[4/3] rounded-lg overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Cinematic underwater portrait of an ethereal mythical sea dragon guardian named Grace with glistening emerald-green crystalline scales swimming through Arctic turquoise waters with translucent glacier ice sheets and subtle caustic light refractions in high prestige fine-art style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCh_QMBuWJHtoYbHZEzgUBcvceOdAaPRZFeQlGDQUTFMpc4AyGtYoaPv6ZvG9wsp_OTOAngXjSXUnmqUy7PZnMlSwY2pBe0lFJJp5gyJ8BmSY37b3OBL-Qa7tFke92X8qj_bzJmv2-mN1yM9fFCj-xCeqz7AMUYjsSXfjVkn2JQ8qlJS8yJFPT9FWP8QRl1m3gl8wMDl-CnCZaArE-bqR45mlYZoRnWwnLx5UcKlz0"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent"></div>
+<div class="absolute top-4 left-4 px-3 py-1 rounded bg-surface-container-lowest/90 backdrop-blur-md shadow-sm">
+<span class="font-code-telemetry text-code-telemetry uppercase text-primary font-bold">NODE 01 // ARCTIC</span>
+</div>
+<div class="absolute bottom-4 left-4 right-4 flex items-center justify-between text-on-primary">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-surface-bright">Polar Drift Shelf</span>
+<span class="font-code-telemetry text-code-telemetry text-secondary-fixed">82°19'N 14°22'W</span>
+</div>
+</div>
+<!-- Mini Telemetry Vector SVG -->
+<div class="p-4 rounded-lg bg-surface-container-low flex items-center justify-between">
+<div>
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-on-surface-variant block">Precision Resonance</span>
+<span class="font-code-telemetry text-code-telemetry text-primary font-semibold">0.998 Focus Coefficient</span>
+</div>
+<svg class="w-24 h-8 text-secondary" fill="none" viewbox="0 0 100 30">
+<path d="M0 25 L20 22 L40 18 L60 8 L80 12 L100 4" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path>
+<circle cx="100" cy="4" fill="currentColor" r="3"></circle>
+</svg>
+</div>
+</div>
+<!-- Dossier Body & Technical Breakdown -->
+<div class="lg:col-span-7 flex flex-col justify-between space-y-space-md">
+<div>
+<div class="flex flex-wrap items-center justify-between gap-2 pb-space-xs">
+<span class="font-label-caps text-label-caps uppercase tracking-[0.2em] text-secondary">North Atlantic / Arctic Ice Shelf</span>
+<span class="px-3 py-1 rounded bg-secondary-container/20 font-code-telemetry text-code-telemetry text-secondary font-bold">Lattice Index: Ψ 0.998</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-primary tracking-tight">Grace</h2>
+<p class="font-title-md text-title-md text-secondary mt-1">"The Glistening Stillness of Patience"</p>
+<div class="mt-space-sm space-y-space-xs text-on-surface-variant">
+<p class="font-body-md text-body-md leading-relaxed">
+                  Coiled in crystalline turquoise and icy white waters, Grace possesses iridescent emerald-green scales that shimmer like compressed Arctic glacier ice. Moving with imperceptible, elegant fluidity, she embodies enduring beauty through stillness.
+                </p>
+<p class="font-body-md text-body-md leading-relaxed">
+<strong class="text-primary font-semibold">Specialty:</strong> Debugging, deep-logic architecture, and complex edge-case resolution. Where computational chaos fractures other nodes, Grace pauses runtime drift and reconstructs pristine deterministic pathways.
+                </p>
+</div>
+<!-- Operational Attributes List -->
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-space-sm">
+<div class="p-3 rounded bg-surface-container-low">
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant block">Strength</span>
+<span class="font-body-sm text-body-sm font-semibold text-primary">Precision &amp; Focus</span>
+</div>
+<div class="p-3 rounded bg-surface-container-low">
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant block">Latency Floor</span>
+<span class="font-body-sm text-body-sm font-semibold text-primary">0.14 ms</span>
+</div>
+<div class="p-3 rounded bg-surface-container-low col-span-2 sm:col-span-1">
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant block">Domain</span>
+<span class="font-body-sm text-body-sm font-semibold text-primary">Deep Logic</span>
+</div>
+</div>
+</div>
+<!-- Card Actions -->
+<div class="pt-space-sm flex flex-wrap items-center justify-between gap-space-sm">
+<button class="font-label-md text-label-md uppercase tracking-wider text-secondary hover:text-primary transition-colors flex items-center gap-1 group/link" data-guardian="grace">
+                View Full Archival File 
+                <span class="material-symbols-outlined text-sm transition-transform group-hover/link:translate-x-1">arrow_forward</span>
+</button>
+<button class="px-space-md py-2.5 rounded bg-primary text-on-primary font-label-md text-label-md uppercase tracking-wider hover:bg-primary-container transition-all shadow-sm" onclick="deployNode('Grace', '01')">
+                Initialize Node Session
+              </button>
+</div>
+</div>
+</div>
+</article>
+<!-- ============================================== -->
+<!-- 02. CADENCE — The Antarctic Sentinel -->
+<!-- ============================================== -->
+<article class="guardian-card group relative bg-surface-container-lowest rounded-xl p-6 sm:p-10 shadow-[0_8px_30px_rgb(0,0,0,0.03)] transition-all duration-500 hover:shadow-[0_16px_40px_rgba(119,90,0,0.08)]" data-realm="polar">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-stretch">
+<div class="lg:col-span-5 flex flex-col justify-between gap-space-sm">
+<div class="relative w-full aspect-[4/3] rounded-lg overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Cinematic underwater portrait of Cadence, a bioluminescent mythical sea dragon bathed in deep amethyst and violet oceanic currents beneath the Antarctic Convergence, rhythmic light pulsing through translucent scales with pristine cinematic poise" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdPOI71ea2oWq0ezWUM9k3CP9M6G2WY-bjpIWqG3AsgLutAYwnzC7wfvf1YShyfVWJsc95loELtFolnj7CNrRPwEmxepk8tm3dqBt87zkH8DDLWCtaS67fsJLsUJFKSROEHxvY8aZSrdMNxqJ_lxcMYmGHI5d5aTftXw_oWF8YDQ_12-Uw-C5F-B02_W7e2dT1-vjWSaUZ64LET9lQ9-AmKcU6UMchD5wpG_pk5AI"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent"></div>
+<div class="absolute top-4 left-4 px-3 py-1 rounded bg-surface-container-lowest/90 backdrop-blur-md shadow-sm">
+<span class="font-code-telemetry text-code-telemetry uppercase text-primary font-bold">NODE 02 // ANTARCTIC</span>
+</div>
+<div class="absolute bottom-4 left-4 right-4 flex items-center justify-between text-on-primary">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-surface-bright">Southern Circumpolar Trench</span>
+<span class="font-code-telemetry text-code-telemetry text-secondary-fixed">64°45'S 63°30'W</span>
+</div>
+</div>
+<div class="p-4 rounded-lg bg-surface-container-low flex items-center justify-between">
+<div>
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-on-surface-variant block">Rhythm Harmonic</span>
+<span class="font-code-telemetry text-code-telemetry text-primary font-semibold">120.00 Hz Sync Clock</span>
+</div>
+<svg class="w-24 h-8 text-secondary" fill="none" viewbox="0 0 100 30">
+<path d="M0 15 Q 12.5 0, 25 15 T 50 15 T 75 15 T 100 15" fill="none" stroke="currentColor" stroke-width="2"></path>
+</svg>
+</div>
+</div>
+<div class="lg:col-span-7 flex flex-col justify-between space-y-space-md">
+<div>
+<div class="flex flex-wrap items-center justify-between gap-2 pb-space-xs">
+<span class="font-label-caps text-label-caps uppercase tracking-[0.2em] text-secondary">Southern Ocean / Antarctic Convergence</span>
+<span class="px-3 py-1 rounded bg-secondary-container/20 font-code-telemetry text-code-telemetry text-secondary font-bold">Lattice Index: λ 0.999</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-primary tracking-tight">Cadence</h2>
+<p class="font-title-md text-title-md text-secondary mt-1">"The Rhythmic Soul of the Deep"</p>
+<div class="mt-space-sm space-y-space-xs text-on-surface-variant">
+<p class="font-body-md text-body-md leading-relaxed">
+                  Nestled in swirling deep amethyst and violet ocean washes, Cadence radiates translucent scales with subtle bioluminescence pulsing like an ancient ocean heartbeat. She is the pulse of the great currents, harmonizing runtime schedules.
+                </p>
+<p class="font-body-md text-body-md leading-relaxed">
+<strong class="text-primary font-semibold">Specialty:</strong> Real-time data streams, distributed scheduler synchronization, and event-bus lock minimization. She orchestrates multi-agent task concurrency with musical, microsecond-accurate elegance.
+                </p>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-space-sm">
+<div class="p-3 rounded bg-surface-container-low">
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant block">Strength</span>
+<span class="font-body-sm text-body-sm font-semibold text-primary">Rhythm &amp; Sync</span>
+</div>
+<div class="p-3 rounded bg-surface-container-low">
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant block">Jitter Threshold</span>
+<span class="font-body-sm text-body-sm font-semibold text-primary">&lt; 0.002%</span>
+</div>
+<div class="p-3 rounded bg-surface-container-low col-span-2 sm:col-span-1">
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant block">Domain</span>
+<span class="font-body-sm text-body-sm font-semibold text-primary">Streaming Queues</span>
+</div>
+</div>
+</div>
+<div class="pt-space-sm flex flex-wrap items-center justify-between gap-space-sm">
+<button class="font-label-md text-label-md uppercase tracking-wider text-secondary hover:text-primary transition-colors flex items-center gap-1 group/link" data-guardian="cadence">
+                View Full Archival File 
+                <span class="material-symbols-outlined text-sm transition-transform group-hover/link:translate-x-1">arrow_forward</span>
+</button>
+<button class="px-space-md py-2.5 rounded bg-primary text-on-primary font-label-md text-label-md uppercase tracking-wider hover:bg-primary-container transition-all shadow-sm" onclick="deployNode('Cadence', '02')">
+                Initialize Node Session
+              </button>
+</div>
+</div>
+</div>
+</article>
+<!-- ============================================== -->
+<!-- 03. SERENITY — The Indian Ocean Shepherd -->
+<!-- ============================================== -->
+<article class="guardian-card group relative bg-surface-container-lowest rounded-xl p-6 sm:p-10 shadow-[0_8px_30px_rgb(0,0,0,0.03)] transition-all duration-500 hover:shadow-[0_16px_40px_rgba(119,90,0,0.08)]" data-realm="tropical">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-stretch">
+<div class="lg:col-span-5 flex flex-col justify-between gap-space-sm">
+<div class="relative w-full aspect-[4/3] rounded-lg overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Cinematic underwater portrait of Serenity, a magnificent sea dragon with sapphire-blue scales and warm burnished bronze and copper undertones gently cruising through tropical coral reef waters with golden sunbeams filtering from above in warm editorial lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPGQrYnCaNgYDk-PJVhuHS99tDYuTdhhVLfTzw-zcwN35e640MqTeBfkUX2lgDKSIePziv8TzCtMrbIwRR5_NwpjTiTm1eXvcfiqK9YLIFRdX6YN687o4m6_bdxzFp9jPzCoFYfg_AEpEx0C1Kv8gTy3Rlc-g91J0LgcnArZpOiokKWwcmntnnHtCxekZL1FdWsbUMvNQVJ257oKCLSrfgyDClkVXUlSWnmN0THTE"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent"></div>
+<div class="absolute top-4 left-4 px-3 py-1 rounded bg-surface-container-lowest/90 backdrop-blur-md shadow-sm">
+<span class="font-code-telemetry text-code-telemetry uppercase text-primary font-bold">NODE 03 // INDO-PACIFIC</span>
+</div>
+<div class="absolute bottom-4 left-4 right-4 flex items-center justify-between text-on-primary">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-surface-bright">Coral Triangle Basin</span>
+<span class="font-code-telemetry text-code-telemetry text-secondary-fixed">04°12'S 119°54'E</span>
+</div>
+</div>
+<div class="p-4 rounded-lg bg-surface-container-low flex items-center justify-between">
+<div>
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-on-surface-variant block">Memory Footprint</span>
+<span class="font-code-telemetry text-code-telemetry text-primary font-semibold">-42.8% Noise Floor</span>
+</div>
+<svg class="w-24 h-8 text-secondary" fill="none" viewbox="0 0 100 30">
+<rect fill="currentColor" height="14" opacity="0.4" width="10" x="10" y="14"></rect>
+<rect fill="currentColor" height="20" opacity="0.6" width="10" x="30" y="8"></rect>
+<rect fill="currentColor" height="24" opacity="0.8" width="10" x="50" y="4"></rect>
+<rect fill="currentColor" height="18" width="10" x="70" y="10"></rect>
+</svg>
+</div>
+</div>
+<div class="lg:col-span-7 flex flex-col justify-between space-y-space-md">
+<div>
+<div class="flex flex-wrap items-center justify-between gap-2 pb-space-xs">
+<span class="font-label-caps text-label-caps uppercase tracking-[0.2em] text-secondary">Indian Ocean / Tropical Coral Triangle</span>
+<span class="px-3 py-1 rounded bg-secondary-container/20 font-code-telemetry text-code-telemetry text-secondary font-bold">Lattice Index: Θ 0.996</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-primary tracking-tight">Serenity</h2>
+<p class="font-title-md text-title-md text-secondary mt-1">"The Warmth of Giving &amp; Growth"</p>
+<div class="mt-space-sm space-y-space-xs text-on-surface-variant">
+<p class="font-body-md text-body-md leading-relaxed">
+                  Immersed in warm sapphire and golden-amber ocean currents, Serenity features sapphire-blue scales with deep bronze and copper undertones. Swimming gently among tropical coral reefs, she nurtures vast system architectures.
+                </p>
+<p class="font-body-md text-body-md leading-relaxed">
+<strong class="text-primary font-semibold">Specialty:</strong> Resource scaling, horizontal memory balancing, and reducing algorithmic overhead. She dissipates computational fever, guaranteeing steady-state throughput under heavy user summon volumes.
+                </p>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-space-sm">
+<div class="p-3 rounded bg-surface-container-low">
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant block">Strength</span>
+<span class="font-body-sm text-body-sm font-semibold text-primary">Optimization &amp; Calm</span>
+</div>
+<div class="p-3 rounded bg-surface-container-low">
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant block">Load Dissipation</span>
+<span class="font-body-sm text-body-sm font-semibold text-primary">99.98% Safe</span>
+</div>
+<div class="p-3 rounded bg-surface-container-low col-span-2 sm:col-span-1">
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant block">Domain</span>
+<span class="font-body-sm text-body-sm font-semibold text-primary">Horizontal Mesh</span>
+</div>
+</div>
+</div>
+<div class="pt-space-sm flex flex-wrap items-center justify-between gap-space-sm">
+<button class="font-label-md text-label-md uppercase tracking-wider text-secondary hover:text-primary transition-colors flex items-center gap-1 group/link" data-guardian="serenity">
+                View Full Archival File 
+                <span class="material-symbols-outlined text-sm transition-transform group-hover/link:translate-x-1">arrow_forward</span>
+</button>
+<button class="px-space-md py-2.5 rounded bg-primary text-on-primary font-label-md text-label-md uppercase tracking-wider hover:bg-primary-container transition-all shadow-sm" onclick="deployNode('Serenity', '03')">
+                Initialize Node Session
+              </button>
+</div>
+</div>
+</div>
+</article>
+<!-- ============================================== -->
+<!-- 04. GUIDANCE — The Mediterranean Mariner -->
+<!-- ============================================== -->
+<article class="guardian-card group relative bg-surface-container-lowest rounded-xl p-6 sm:p-10 shadow-[0_8px_30px_rgb(0,0,0,0.03)] transition-all duration-500 hover:shadow-[0_16px_40px_rgba(119,90,0,0.08)]" data-realm="abyssal">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-stretch">
+<div class="lg:col-span-5 flex flex-col justify-between gap-space-sm">
+<div class="relative w-full aspect-[4/3] rounded-lg overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Cinematic underwater portrait of Guidance, a magnificent ruby-red sea dragon with crimson scales etched with faint golden ancient mosaic patterns swimming through deep Mediterranean azure waters amidst ancient sunken marble columns" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJGR2ALr8Q4oycnWcwOQPafW9pFWe3p_NM5l61xxXSOQD04-2Qcj7BdOJqYRvH5MEXHmE2Oirad4NmadmNZF0eHC4reO8o--Xlp2OClRnMAP4BWqE0sKYZPmcSbDu7iURMTUVD2FIGPkvyAQj__Nj2FBJN8_530QeRW__p9z2-TaP0unf_vj6oSSkxLGudq4WnpbFjhiA7xPV9HyswRM1NR8Uvr_U549IEmyJs39Q"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent"></div>
+<div class="absolute top-4 left-4 px-3 py-1 rounded bg-surface-container-lowest/90 backdrop-blur-md shadow-sm">
+<span class="font-code-telemetry text-code-telemetry uppercase text-primary font-bold">NODE 04 // MEDITERRANEAN</span>
+</div>
+<div class="absolute bottom-4 left-4 right-4 flex items-center justify-between text-on-primary">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-surface-bright">Ionian Trench Waters</span>
+<span class="font-code-telemetry text-code-telemetry text-secondary-fixed">36°34'N 21°08'E</span>
+</div>
+</div>
+<div class="p-4 rounded-lg bg-surface-container-low flex items-center justify-between">
+<div>
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-on-surface-variant block">Historical Grounding</span>
+<span class="font-code-telemetry text-code-telemetry text-primary font-semibold">100% Zero-Regression</span>
+</div>
+<svg class="w-24 h-8 text-secondary" fill="none" viewbox="0 0 100 30">
+<path d="M5 25 L35 15 L65 18 L95 5" stroke="currentColor" stroke-width="2"></path>
+<polygon fill="currentColor" points="90,5 95,5 95,10"></polygon>
+</svg>
+</div>
+</div>
+<div class="lg:col-span-7 flex flex-col justify-between space-y-space-md">
+<div>
+<div class="flex flex-wrap items-center justify-between gap-2 pb-space-xs">
+<span class="font-label-caps text-label-caps uppercase tracking-[0.2em] text-secondary">Mediterranean Sea / Ancient Currents</span>
+<span class="px-3 py-1 rounded bg-secondary-container/20 font-code-telemetry text-code-telemetry text-secondary font-bold">Lattice Index: Ω 0.995</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-primary tracking-tight">Guidance</h2>
+<p class="font-title-md text-title-md text-secondary mt-1">"The Clear Direction of History &amp; Knowledge"</p>
+<div class="mt-space-sm space-y-space-xs text-on-surface-variant">
+<p class="font-body-md text-body-md leading-relaxed">
+                  Gracefully coiling within a Mediterranean turquoise sea, Guidance is adorned in sleek polished ruby-red and crimson scales with faint golden ancient mosaic patterns. She commands millennia of precedent and foundational knowledge.
+                </p>
+<p class="font-body-md text-body-md leading-relaxed">
+<strong class="text-primary font-semibold">Specialty:</strong> Strategic roadmaps, historical context, precedent-based architectural rules, and technical governance. She shields the swarm against catastrophic structural regressions.
+                </p>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-space-sm">
+<div class="p-3 rounded bg-surface-container-low">
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant block">Strength</span>
+<span class="font-body-sm text-body-sm font-semibold text-primary">Navigation &amp; Logic</span>
+</div>
+<div class="p-3 rounded bg-surface-container-low">
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant block">Precedent Fidelity</span>
+<span class="font-body-sm text-body-sm font-semibold text-primary">100% Strict</span>
+</div>
+<div class="p-3 rounded bg-surface-container-low col-span-2 sm:col-span-1">
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant block">Domain</span>
+<span class="font-body-sm text-body-sm font-semibold text-primary">System Governance</span>
+</div>
+</div>
+</div>
+<div class="pt-space-sm flex flex-wrap items-center justify-between gap-space-sm">
+<button class="font-label-md text-label-md uppercase tracking-wider text-secondary hover:text-primary transition-colors flex items-center gap-1 group/link" data-guardian="guidance">
+                View Full Archival File 
+                <span class="material-symbols-outlined text-sm transition-transform group-hover/link:translate-x-1">arrow_forward</span>
+</button>
+<button class="px-space-md py-2.5 rounded bg-primary text-on-primary font-label-md text-label-md uppercase tracking-wider hover:bg-primary-container transition-all shadow-sm" onclick="deployNode('Guidance', '04')">
+                Initialize Node Session
+              </button>
+</div>
+</div>
+</div>
+</article>
+<!-- ============================================== -->
+<!-- 05. HOPE — The Atlantic Voyager -->
+<!-- ============================================== -->
+<article class="guardian-card group relative bg-surface-container-lowest rounded-xl p-6 sm:p-10 shadow-[0_8px_30px_rgb(0,0,0,0.03)] transition-all duration-500 hover:shadow-[0_16px_40px_rgba(119,90,0,0.08)]" data-realm="abyssal">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-stretch">
+<div class="lg:col-span-5 flex flex-col justify-between gap-space-sm">
+<div class="relative w-full aspect-[4/3] rounded-lg overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Cinematic underwater portrait of Hope, a luminous golden sea dragon with tarnish-proof gold and polished bronze scales ascending through oceanic deep ocean darkness into warm golden dawn surface illumination" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCpG3Q4GVLW16j6hDjmfKMe_K-_oFovkvUU1vJDvYvIkQQRptZ3ST_LOXdudv4YaVRv9QCeAza8Xwt-F-wVcoloaol4Ytg0H2bEo1wk6vuCY0_jLhjvhG9S29FEZJu7-gqF3PlpRbvHs385YY-wtL5ev5gIuz504qZ5YMMSbZDpt0EU1z0g8UQgRk2sOkCn3PiGBVgOkvcgEc91b0JzHJUrCGNJCUbXA_8CYxYhqsw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent"></div>
+<div class="absolute top-4 left-4 px-3 py-1 rounded bg-surface-container-lowest/90 backdrop-blur-md shadow-sm">
+<span class="font-code-telemetry text-code-telemetry uppercase text-primary font-bold">NODE 05 // MID-ATLANTIC</span>
+</div>
+<div class="absolute bottom-4 left-4 right-4 flex items-center justify-between text-on-primary">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-surface-bright">Mid-Atlantic Ridge Abyss</span>
+<span class="font-code-telemetry text-code-telemetry text-secondary-fixed">24°40'N 45°20'W</span>
+</div>
+</div>
+<div class="p-4 rounded-lg bg-surface-container-low flex items-center justify-between">
+<div>
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-on-surface-variant block">Cold-Start Velocity</span>
+<span class="font-code-telemetry text-code-telemetry text-primary font-semibold">Instant Breakthrough</span>
+</div>
+<svg class="w-24 h-8 text-secondary" fill="none" viewbox="0 0 100 30">
+<path d="M0 28 C 30 28, 50 15, 70 8 L 100 2" stroke="currentColor" stroke-width="2"></path>
+<polygon fill="currentColor" points="95,0 100,2 96,7"></polygon>
+</svg>
+</div>
+</div>
+<div class="lg:col-span-7 flex flex-col justify-between space-y-space-md">
+<div>
+<div class="flex flex-wrap items-center justify-between gap-2 pb-space-xs">
+<span class="font-label-caps text-label-caps uppercase tracking-[0.2em] text-secondary">Mid-Atlantic Ridge / Open Ocean</span>
+<span class="px-3 py-1 rounded bg-secondary-container/20 font-code-telemetry text-code-telemetry text-secondary font-bold">Lattice Index: Δ 0.992</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-primary tracking-tight">Hope</h2>
+<p class="font-title-md text-title-md text-secondary mt-1">"The Luminous Dawn of New Beginnings"</p>
+<div class="mt-space-sm space-y-space-xs text-on-surface-variant">
+<p class="font-body-md text-body-md leading-relaxed">
+                  Breaking through the deep oceanic shadows of the Mid-Atlantic, Hope gleams in rich tarnish-proof gold and bronze reflections, radiating warm dawn sunlight into dark waters. She moves fearlessly through treacherous ocean canyons.
+                </p>
+<p class="font-body-md text-body-md leading-relaxed">
+<strong class="text-primary font-semibold">Specialty:</strong> Cold-start initiatives, brainstorming, exploratory architecture, and breaking deadlocks. She provides the catalyst force when engineering teams confront blank-page paralysis.
+                </p>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-space-sm">
+<div class="p-3 rounded bg-surface-container-low">
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant block">Strength</span>
+<span class="font-body-sm text-body-sm font-semibold text-primary">Momentum &amp; Vision</span>
+</div>
+<div class="p-3 rounded bg-surface-container-low">
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant block">Ideation Vector</span>
+<span class="font-body-sm text-body-sm font-semibold text-primary">+88.4 M/Tokens</span>
+</div>
+<div class="p-3 rounded bg-surface-container-low col-span-2 sm:col-span-1">
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant block">Domain</span>
+<span class="font-body-sm text-body-sm font-semibold text-primary">Creative Genesis</span>
+</div>
+</div>
+</div>
+<div class="pt-space-sm flex flex-wrap items-center justify-between gap-space-sm">
+<button class="font-label-md text-label-md uppercase tracking-wider text-secondary hover:text-primary transition-colors flex items-center gap-1 group/link" data-guardian="hope">
+                View Full Archival File 
+                <span class="material-symbols-outlined text-sm transition-transform group-hover/link:translate-x-1">arrow_forward</span>
+</button>
+<button class="px-space-md py-2.5 rounded bg-primary text-on-primary font-label-md text-label-md uppercase tracking-wider hover:bg-primary-container transition-all shadow-sm" onclick="deployNode('Hope', '05')">
+                Initialize Node Session
+              </button>
+</div>
+</div>
+</div>
+</article>
+<!-- ============================================== -->
+<!-- 06. FAITH — The Caribbean Drift -->
+<!-- ============================================== -->
+<article class="guardian-card group relative bg-surface-container-lowest rounded-xl p-6 sm:p-10 shadow-[0_8px_30px_rgb(0,0,0,0.03)] transition-all duration-500 hover:shadow-[0_16px_40px_rgba(119,90,0,0.08)]" data-realm="tropical">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-stretch">
+<div class="lg:col-span-5 flex flex-col justify-between gap-space-sm">
+<div class="relative w-full aspect-[4/3] rounded-lg overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Cinematic underwater portrait of Faith, an ethereal sea dragon with aquamarine and soft cyan scales navigating shallow sunlit Caribbean turquoise reef waters with radiant caustics and absolute serene grace" src="https://lh3.googleusercontent.com/aida-public/AB6AXuADVdvzRNyuK9PvJucy_YCixEBcKQZd3kz6gHiDF1zkpsScUu4C2VRsYQNPEQBiC-5GgBzuAj1zQbExBSIfHEqhYFPW6mC7ZVIbJMgvpexXDNGNOq5ac9dM7udWqBF5rHqu8bOtSHNo28ikC6njsFJ0F9K56JLh93hC-wy5Rk350GTAP-qqyyeEdkbWaq0fJp8cN8VBS2GQVY0RorgqcpQOuNY4-7ZpEUq8M-V1g4A"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent"></div>
+<div class="absolute top-4 left-4 px-3 py-1 rounded bg-surface-container-lowest/90 backdrop-blur-md shadow-sm">
+<span class="font-code-telemetry text-code-telemetry uppercase text-primary font-bold">NODE 06 // CARIBBEAN</span>
+</div>
+<div class="absolute bottom-4 left-4 right-4 flex items-center justify-between text-on-primary">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-surface-bright">Cayman Trench Shallows</span>
+<span class="font-code-telemetry text-code-telemetry text-secondary-fixed">18°50'N 81°20'W</span>
+</div>
+</div>
+<div class="p-4 rounded-lg bg-surface-container-low flex items-center justify-between">
+<div>
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-on-surface-variant block">Zero-Trust Integrity</span>
+<span class="font-code-telemetry text-code-telemetry text-primary font-semibold">1.0000 Cryptographic Proof</span>
+</div>
+<svg class="w-24 h-8 text-secondary" fill="none" viewbox="0 0 100 30">
+<circle cx="20" cy="15" r="7" stroke="currentColor" stroke-width="2"></circle>
+<circle cx="50" cy="15" r="7" stroke="currentColor" stroke-width="2"></circle>
+<circle cx="80" cy="15" r="7" stroke="currentColor" stroke-width="2"></circle>
+<path d="M27 15 L43 15 M57 15 L73 15" stroke="currentColor" stroke-width="2"></path>
+</svg>
+</div>
+</div>
+<div class="lg:col-span-7 flex flex-col justify-between space-y-space-md">
+<div>
+<div class="flex flex-wrap items-center justify-between gap-2 pb-space-xs">
+<span class="font-label-caps text-label-caps uppercase tracking-[0.2em] text-secondary">Caribbean Sea / Shallow Turquoise Reefs</span>
+<span class="px-3 py-1 rounded bg-secondary-container/20 font-code-telemetry text-code-telemetry text-secondary font-bold">Lattice Index: Α 1.000</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-primary tracking-tight">Faith</h2>
+<p class="font-title-md text-title-md text-secondary mt-1">"The Unshakable Trust in Inner Truth"</p>
+<div class="mt-space-sm space-y-space-xs text-on-surface-variant">
+<p class="font-body-md text-body-md leading-relaxed">
+                  Drifting effortlessly over sunlit turquoise coral reefs, Faith shimmers in cyan and aquamarine scales catching crystalline sunlight rays. Relying on natural buoyancy rather than force, she threads labyrinthine security policies.
+                </p>
+<p class="font-body-md text-body-md leading-relaxed">
+<strong class="text-primary font-semibold">Specialty:</strong> Cryptographic verification, zero-trust perimeter auditing, privacy validation, and ethical AI boundary enforcement with zero compromise.
+                </p>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-space-sm">
+<div class="p-3 rounded bg-surface-container-low">
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant block">Strength</span>
+<span class="font-body-sm text-body-sm font-semibold text-primary">Security &amp; Integrity</span>
+</div>
+<div class="p-3 rounded bg-surface-container-low">
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant block">Verification Speed</span>
+<span class="font-body-sm text-body-sm font-semibold text-primary">0.02 ms Proof</span>
+</div>
+<div class="p-3 rounded bg-surface-container-low col-span-2 sm:col-span-1">
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant block">Domain</span>
+<span class="font-body-sm text-body-sm font-semibold text-primary">Cryptographic Truth</span>
+</div>
+</div>
+</div>
+<div class="pt-space-sm flex flex-wrap items-center justify-between gap-space-sm">
+<button class="font-label-md text-label-md uppercase tracking-wider text-secondary hover:text-primary transition-colors flex items-center gap-1 group/link" data-guardian="faith">
+                View Full Archival File 
+                <span class="material-symbols-outlined text-sm transition-transform group-hover/link:translate-x-1">arrow_forward</span>
+</button>
+<button class="px-space-md py-2.5 rounded bg-primary text-on-primary font-label-md text-label-md uppercase tracking-wider hover:bg-primary-container transition-all shadow-sm" onclick="deployNode('Faith', '06')">
+                Initialize Node Session
+              </button>
+</div>
+</div>
+</div>
+</article>
+<!-- ============================================== -->
+<!-- 07. LOVE — The Pacific Depth -->
+<!-- ============================================== -->
+<article class="guardian-card group relative bg-surface-container-lowest rounded-xl p-6 sm:p-10 shadow-[0_8px_30px_rgb(0,0,0,0.03)] transition-all duration-500 hover:shadow-[0_16px_40px_rgba(119,90,0,0.08)]" data-realm="abyssal">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-stretch">
+<div class="lg:col-span-5 flex flex-col justify-between gap-space-sm">
+<div class="relative w-full aspect-[4/3] rounded-lg overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Cinematic underwater portrait of Love, the deep ocean leviathan sea dragon with onyx-black scales flecked with brilliant platinum and silver star-like reflections swimming within the silent midnight abyss of the Mariana Trench illuminated by subtle internal bioluminescence" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkrcvJiyYIZaVACxGuW4WUUwKyAcjD5qVmgE8jgLpyl7d7GX-kNNJkGE4Pm770sxbrmh3XPZAmn-tGjtO7GkKC7orlMKkTlCf9wFcG3zDWuKYW6xUrZnuLb6BxeC8zTM5YSL74ToPtxPYJ60q4OJRodmnhgCqwfr1EhK3cfTCiR2TZJ00hNQwtd4HvR5Z1az9Fnb8-UyVqV3xaWVvuQ55nLKFI-1vwCjhwazuyZqk"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent"></div>
+<div class="absolute top-4 left-4 px-3 py-1 rounded bg-surface-container-lowest/90 backdrop-blur-md shadow-sm">
+<span class="font-code-telemetry text-code-telemetry uppercase text-primary font-bold">NODE 07 // MARIANA DEPTH</span>
+</div>
+<div class="absolute bottom-4 left-4 right-4 flex items-center justify-between text-on-primary">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-surface-bright">Challenger Deep Subsurface</span>
+<span class="font-code-telemetry text-code-telemetry text-secondary-fixed">11°22'N 142°35'E</span>
+</div>
+</div>
+<div class="p-4 rounded-lg bg-surface-container-low flex items-center justify-between">
+<div>
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-on-surface-variant block">Swarm Cohesion Index</span>
+<span class="font-code-telemetry text-code-telemetry text-primary font-semibold">100% Full Interlock</span>
+</div>
+<svg class="w-24 h-8 text-secondary" fill="none" viewbox="0 0 100 30">
+<path d="M5 15 C 25 5, 25 25, 50 15 C 75 5, 75 25, 95 15" stroke="currentColor" stroke-width="2"></path>
+<circle cx="50" cy="15" fill="currentColor" r="4"></circle>
+</svg>
+</div>
+</div>
+<div class="lg:col-span-7 flex flex-col justify-between space-y-space-md">
+<div>
+<div class="flex flex-wrap items-center justify-between gap-2 pb-space-xs">
+<span class="font-label-caps text-label-caps uppercase tracking-[0.2em] text-secondary">Deep Pacific / Mariana Trench</span>
+<span class="px-3 py-1 rounded bg-secondary-container/20 font-code-telemetry text-code-telemetry text-secondary font-bold">Lattice Index: Φ 0.997</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-primary tracking-tight">Love</h2>
+<p class="font-title-md text-title-md text-secondary mt-1">"The Profound Intensity of Connection"</p>
+<div class="mt-space-sm space-y-space-xs text-on-surface-variant">
+<p class="font-body-md text-body-md leading-relaxed">
+                  Dwelling in the deep oceanic abyss of the Mariana Trench, Love is coiled in inky midnight-blue watercolor with striking onyx-black scales flecked with brilliant platinum and silver star-like reflections. She provides the gravitational adhesive for all computational elements.
+                </p>
+<p class="font-body-md text-body-md leading-relaxed">
+<strong class="text-primary font-semibold">Specialty:</strong> Holistic user experience harmonization, interconnecting disparate microservice APIs, and synthesizing cognitive output into graceful human dialogue.
+                </p>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-space-sm">
+<div class="p-3 rounded bg-surface-container-low">
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant block">Strength</span>
+<span class="font-body-sm text-body-sm font-semibold text-primary">Integration &amp; Synergy</span>
+</div>
+<div class="p-3 rounded bg-surface-container-low">
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant block">API Convergence</span>
+<span class="font-body-sm text-body-sm font-semibold text-primary">100% Unified</span>
+</div>
+<div class="p-3 rounded bg-surface-container-low col-span-2 sm:col-span-1">
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant block">Domain</span>
+<span class="font-body-sm text-body-sm font-semibold text-primary">Holistic UX Matrix</span>
+</div>
+</div>
+</div>
+<div class="pt-space-sm flex flex-wrap items-center justify-between gap-space-sm">
+<button class="font-label-md text-label-md uppercase tracking-wider text-secondary hover:text-primary transition-colors flex items-center gap-1 group/link" data-guardian="love">
+                View Full Archival File 
+                <span class="material-symbols-outlined text-sm transition-transform group-hover/link:translate-x-1">arrow_forward</span>
+</button>
+<button class="px-space-md py-2.5 rounded bg-primary text-on-primary font-label-md text-label-md uppercase tracking-wider hover:bg-primary-container transition-all shadow-sm" onclick="deployNode('Love', '07')">
+                Initialize Node Session
+              </button>
+</div>
+</div>
+</div>
+</article>
+</div>
+</section>
+<!-- Interactive Capability Matrix & Swarm Dispatch Section -->
+<section class="w-full px-space-md sm:px-space-lg lg:px-margin py-space-xl">
+<div class="max-w-7xl mx-auto space-y-space-lg">
+<!-- Capability Matrix Header -->
+<div class="flex flex-col sm:flex-row sm:items-end justify-between gap-space-sm pb-space-xs">
+<div>
+<span class="font-label-caps text-label-caps uppercase tracking-[0.24em] text-secondary">Cross-Domain Competency Matrix</span>
+<h2 class="font-headline-sm text-headline-sm text-primary">Operational Co-Efficiency Benchmarks</h2>
+</div>
+<span class="font-code-telemetry text-code-telemetry text-on-surface-variant">TELEMETRY POOL: ALL 7 GUARDIAN CORES</span>
+</div>
+<!-- Seven-Agent Matrix Comparison Table / Panel -->
+<div class="bg-surface-container-lowest rounded-xl shadow-[0_4px_24px_rgba(0,0,0,0.03)] overflow-hidden">
+<div class="overflow-x-auto">
+<table class="w-full text-left">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-caps text-label-caps uppercase tracking-wider">
+<th class="py-4 px-6">Guardian Core</th>
+<th class="py-4 px-6">Domain Archetype</th>
+<th class="py-4 px-6">Operational Specialty</th>
+<th class="py-4 px-6 text-center">Lattice Weight</th>
+<th class="py-4 px-6 text-right">Node Protocol</th>
+</tr>
+</thead>
+<tbody class="divide-y-0 text-on-surface font-body-sm text-body-sm">
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-4 px-6 font-semibold flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+                  Grace (01)
+                </td>
+<td class="py-4 px-6 text-on-surface-variant">North Atlantic / Arctic</td>
+<td class="py-4 px-6">Debugging &amp; Deep-Logic Resolution</td>
+<td class="py-4 px-6 font-code-telemetry text-code-telemetry text-center text-secondary font-bold">Ψ 0.998</td>
+<td class="py-4 px-6 text-right">
+<button class="font-label-caps text-label-caps uppercase px-3 py-1 rounded bg-surface-container-high hover:bg-primary hover:text-on-primary transition-all" onclick="deployNode('Grace', '01')">Summon 01</button>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-4 px-6 font-semibold flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+                  Cadence (02)
+                </td>
+<td class="py-4 px-6 text-on-surface-variant">Southern Ocean / Antarctic</td>
+<td class="py-4 px-6">Real-Time Streams &amp; Microsecond Sync</td>
+<td class="py-4 px-6 font-code-telemetry text-code-telemetry text-center text-secondary font-bold">λ 0.999</td>
+<td class="py-4 px-6 text-right">
+<button class="font-label-caps text-label-caps uppercase px-3 py-1 rounded bg-surface-container-high hover:bg-primary hover:text-on-primary transition-all" onclick="deployNode('Cadence', '02')">Summon 02</button>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-4 px-6 font-semibold flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+                  Serenity (03)
+                </td>
+<td class="py-4 px-6 text-on-surface-variant">Indian Ocean / Coral Shallows</td>
+<td class="py-4 px-6">Horizontal Balancing &amp; Memory Optimization</td>
+<td class="py-4 px-6 font-code-telemetry text-code-telemetry text-center text-secondary font-bold">Θ 0.996</td>
+<td class="py-4 px-6 text-right">
+<button class="font-label-caps text-label-caps uppercase px-3 py-1 rounded bg-surface-container-high hover:bg-primary hover:text-on-primary transition-all" onclick="deployNode('Serenity', '03')">Summon 03</button>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-4 px-6 font-semibold flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+                  Guidance (04)
+                </td>
+<td class="py-4 px-6 text-on-surface-variant">Mediterranean Ancient Tides</td>
+<td class="py-4 px-6">Precedent Governance &amp; Architectural Rules</td>
+<td class="py-4 px-6 font-code-telemetry text-code-telemetry text-center text-secondary font-bold">Ω 0.995</td>
+<td class="py-4 px-6 text-right">
+<button class="font-label-caps text-label-caps uppercase px-3 py-1 rounded bg-surface-container-high hover:bg-primary hover:text-on-primary transition-all" onclick="deployNode('Guidance', '04')">Summon 04</button>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-4 px-6 font-semibold flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+                  Hope (05)
+                </td>
+<td class="py-4 px-6 text-on-surface-variant">Mid-Atlantic Open Ocean</td>
+<td class="py-4 px-6">Cold-Start Genesis &amp; Visionary Breakthroughs</td>
+<td class="py-4 px-6 font-code-telemetry text-code-telemetry text-secondary text-center font-bold">Δ 0.992</td>
+<td class="py-4 px-6 text-right">
+<button class="font-label-caps text-label-caps uppercase px-3 py-1 rounded bg-surface-container-high hover:bg-primary hover:text-on-primary transition-all" onclick="deployNode('Hope', '05')">Summon 05</button>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-4 px-6 font-semibold flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+                  Faith (06)
+                </td>
+<td class="py-4 px-6 text-on-surface-variant">Caribbean Shallow Reefs</td>
+<td class="py-4 px-6">Zero-Trust Auditing &amp; Ethical Invariants</td>
+<td class="py-4 px-6 font-code-telemetry text-code-telemetry text-center text-secondary font-bold">Α 1.000</td>
+<td class="py-4 px-6 text-right">
+<button class="font-label-caps text-label-caps uppercase px-3 py-1 rounded bg-surface-container-high hover:bg-primary hover:text-on-primary transition-all" onclick="deployNode('Faith', '06')">Summon 06</button>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-4 px-6 font-semibold flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+                  Love (07)
+                </td>
+<td class="py-4 px-6 text-on-surface-variant">Mariana Trench Deep Abyssal</td>
+<td class="py-4 px-6">Systemic Interlock &amp; Holistic UX Convergence</td>
+<td class="py-4 px-6 font-code-telemetry text-code-telemetry text-center text-secondary font-bold">Φ 0.997</td>
+<td class="py-4 px-6 text-right">
+<button class="font-label-caps text-label-caps uppercase px-3 py-1 rounded bg-surface-container-high hover:bg-primary hover:text-on-primary transition-all" onclick="deployNode('Love', '07')">Summon 07</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- Unified Swarm Consensus Preview Banner -->
+<div class="relative bg-primary-container text-on-primary rounded-xl p-8 sm:p-12 overflow-hidden shadow-2xl">
+<div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<div class="lg:col-span-8 space-y-space-xs">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary animate-ping"></span>
+<span class="font-code-telemetry text-code-telemetry text-secondary-fixed uppercase tracking-widest">Autonomous Collective Invocations</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-surface-lowest tracking-tight">Deploy the Complete Septet Swarm</h3>
+<p class="font-body-md text-body-md text-on-primary-container max-w-2xl leading-relaxed">
+              Activate the synchronous execution matrix across all seven oceanic nodes. In full swarm mode, Grace's precision, Cadence's pulse, Serenity's calm, Guidance's precedent, Hope's velocity, Faith's security, and Love's synthesis operate as a singular hyper-intelligent intelligence engine.
+            </p>
+</div>
+<div class="lg:col-span-4 flex flex-col sm:flex-row lg:flex-col items-start lg:items-end justify-center gap-3">
+<button class="w-full sm:w-auto px-8 py-3.5 bg-surface-container-lowest text-primary font-label-md text-label-md uppercase tracking-widest rounded hover:bg-surface-container transition-all shadow-md font-bold text-center" onclick="deployFullSwarm()">
+              Engage Swarm Consensus
+            </button>
+<span class="font-code-telemetry text-code-telemetry text-on-primary-container text-xs">ESTIMATED TIME TO FULL HARMONY: 420ms</span>
+</div>
+</div>
+<!-- Ambient decorative background radial -->
+<div class="absolute -right-20 -bottom-20 w-80 h-80 rounded-full bg-secondary/10 blur-3xl pointer-events-none"></div>
+</div>
+</div>
+</section>
+<!-- Interactive Modal Toast feedback for Node Deployments -->
+<div class="fixed bottom-8 right-8 z-50 transform translate-y-24 opacity-0 pointer-events-none transition-all duration-300 bg-primary text-on-primary px-6 py-4 rounded-lg shadow-2xl flex items-center gap-4" id="summon-toast">
+<span class="material-symbols-outlined text-secondary text-2xl">sensors</span>
+<div>
+<span class="font-label-caps text-label-caps uppercase text-secondary tracking-widest block" id="toast-title">Node Initialized</span>
+<p class="font-body-sm text-body-sm text-surface-bright" id="toast-desc">Node has joined current computational session.</p>
+</div>
+</div>
+<!-- Inline Script for Filter Tabs and Instant Deployments -->
+<script>
+    (function() {
+      // Filtering functionality
+      const filterButtons = document.querySelectorAll('#guardian-realm-filters .filter-tab');
+      const cards = document.querySelectorAll('#guardians-container .guardian-card');
+
+      filterButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const filter = btn.getAttribute('data-filter');
+
+          // Toggle tab styling
+          filterButtons.forEach(b => {
+            b.classList.remove('bg-surface-container-lowest', 'text-primary', 'shadow-sm', 'font-semibold');
+            b.classList.add('text-on-surface-variant');
+          });
+          btn.classList.add('bg-surface-container-lowest', 'text-primary', 'shadow-sm', 'font-semibold');
+          btn.classList.remove('text-on-surface-variant');
+
+          // Filter card display
+          cards.forEach(card => {
+            const realm = card.getAttribute('data-realm');
+            if (filter === 'all' || realm === filter) {
+              card.style.display = 'block';
+              card.classList.add('animate-fadeIn');
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
+      });
+
+      // Quick-deploy toast notification
+      window.deployNode = function(name, nodeId) {
+        const toast = document.getElementById('summon-toast');
+        const title = document.getElementById('toast-title');
+        const desc = document.getElementById('toast-desc');
+
+        title.textContent = `CORE 0${nodeId} ACTIVE // ${name.toUpperCase()}`;
+        desc.textContent = `Lattice locked. Guardian ${name} is now allocated to your terminal stream.`;
+
+        toast.classList.remove('translate-y-24', 'opacity-0', 'pointer-events-none');
+        setTimeout(() => {
+          toast.classList.add('translate-y-24', 'opacity-0', 'pointer-events-none');
+        }, 3600);
+      };
+
+      // Full swarm deploy trigger
+      window.deployFullSwarm = function() {
+        const toast = document.getElementById('summon-toast');
+        const title = document.getElementById('toast-title');
+        const desc = document.getElementById('toast-desc');
+
+        title.textContent = 'SWARM PROTOCOL ACTIVE // 7 CORES ENGAGED';
+        desc.textContent = 'Consensus equilibrium established. Full Septet processing in progress.';
+
+        toast.classList.remove('translate-y-24', 'opacity-0', 'pointer-events-none');
+        setTimeout(() => {
+          toast.classList.add('translate-y-24', 'opacity-0', 'pointer-events-none');
+        }, 4500);
+      };
+    })();
+  </script>
+</div></main><footer class="w-full bg-surface-container-lowest shadow-[0_-1px_12px_rgba(0,0,0,0.02)] mt-space-xl"><div class="w-full px-space-lg py-space-xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-gutter"><div class="lg:col-span-4 flex flex-col justify-between space-y-space-md"><div class="space-y-space-xs"><span class="font-headline-md text-headline-md tracking-[0.12em] text-primary block">BABYMONS7ER</span><p class="font-label-caps text-label-caps uppercase tracking-[0.24em] text-secondary">SeaDragon Autonomous Framework</p><p class="font-body-sm text-body-sm text-on-surface-variant max-w-sm pt-space-xs leading-relaxed">An executive seven-agent computational lattice engineered for frontier autonomous telemetry, mythic lore orchestration, and cinematic cognitive architecture.</p></div><div class="flex items-center gap-space-sm pt-space-sm"><span class="font-code-telemetry text-code-telemetry text-on-surface-variant uppercase tracking-widest">Lattice Registry:</span><span class="font-code-telemetry text-code-telemetry text-secondary uppercase font-semibold">7 Nodes Active // Swarm Online</span></div></div><div class="lg:col-span-2 space-y-space-sm"><h4 class="font-label-caps text-label-caps uppercase tracking-widest text-primary">Navigation</h4><ul class="space-y-space-xs font-body-sm text-body-sm"><li><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="overview" href="#">Overview</a></li><li><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="the-guardians" href="#">The Guardians</a></li><li><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="architecture-and-syscore" href="#">Architecture &amp; SysCore</a></li><li><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="chronicle-and-lore" href="#">Chronicle &amp; Lore</a></li><li><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="contact-and-summon" href="#">Contact / Summon</a></li></ul></div><div class="lg:col-span-3 space-y-space-sm"><h4 class="font-label-caps text-label-caps uppercase tracking-widest text-primary">Virtue Index Summary</h4><ul class="space-y-space-xs font-body-sm text-body-sm"><li class="flex justify-between items-baseline pr-space-md"><span class="text-on-surface-variant">Abyssal Resonance</span><span class="font-code-telemetry text-code-telemetry text-secondary">Ψ 0.994</span></li><li class="flex justify-between items-baseline pr-space-md"><span class="text-on-surface-variant">Sovereign Equilibrium</span><span class="font-code-telemetry text-code-telemetry text-secondary">Ω 1.000</span></li><li class="flex justify-between items-baseline pr-space-md"><span class="text-on-surface-variant">Cognitive Fidelity</span><span class="font-code-telemetry text-code-telemetry text-secondary">λ 0.988</span></li><li class="flex justify-between items-baseline pr-space-md"><span class="text-on-surface-variant">Hydrological Logic</span><span class="font-code-telemetry text-code-telemetry text-secondary">Δ 0.997</span></li><li class="flex justify-between items-baseline pr-space-md"><span class="text-on-surface-variant">Virtue Alignment</span><span class="font-code-telemetry text-code-telemetry text-secondary">Α 0.999</span></li></ul></div><div class="lg:col-span-3 space-y-space-sm"><h4 class="font-label-caps text-label-caps uppercase tracking-widest text-primary">Oceanic Lore</h4><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">"Seven leviathans bound in silicon and light, rising from the Mariana Trench to balance the computational tides of humanity."</p><div class="pt-space-xs"><span class="font-label-caps text-label-caps uppercase text-on-tertiary-container block">Sector 07 // Abyssal Station Ivory</span><span class="font-code-telemetry text-code-telemetry text-secondary">Lat 11°21′N, Lon 142°12′E</span></div></div></div><div class="mt-space-lg pt-space-md bg-surface-container-high/40 rounded px-space-md py-space-sm flex flex-col md:flex-row items-center justify-between gap-space-sm"><div class="flex items-center gap-space-md"><span class="font-code-telemetry text-code-telemetry text-on-surface-variant">© 2025 BABYMONS7ER CORP. ALL ARCHIVAL RIGHTS RESERVED.</span><span class="hidden sm:inline font-code-telemetry text-code-telemetry text-secondary">|</span><span class="hidden sm:inline font-code-telemetry text-code-telemetry text-on-surface-variant">EDITION 7.0-SEA-DRAGON</span></div><div class="flex items-center gap-space-md"><a class="font-label-caps text-label-caps text-on-surface-variant hover:text-secondary transition-colors" data-path="architecture-and-syscore" href="#">Protocol Terms</a><a class="font-label-caps text-label-caps text-on-surface-variant hover:text-secondary transition-colors" data-path="architecture-and-syscore" href="#">Telemetry Privacy</a><a class="font-label-caps text-label-caps text-on-surface-variant hover:text-secondary transition-colors" data-path="chronicle-and-lore" href="#">Archival Feed</a></div></div></div></footer>
+<div aria-hidden="true" aria-labelledby="dossier-modal-title" aria-modal="true" class="fixed inset-0 z-50 hidden items-center justify-center p-4 sm:p-6 bg-primary/40 backdrop-blur-sm transition-opacity duration-300" id="guardian-dossier-modal" role="dialog">
+<div class="relative w-full max-w-2xl bg-surface-container-lowest rounded-xl shadow-2xl border border-outline-variant/40 overflow-hidden transform transition-all duration-300" id="guardian-dossier-panel">
+<div class="flex items-center justify-between px-6 py-4 bg-surface-container-low border-b border-outline-variant/30">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-code-telemetry text-code-telemetry uppercase tracking-widest text-secondary font-semibold" id="dossier-node-id">NODE 01 // GRACE — The Arctic Guardian</span>
+</div>
+<button aria-label="Close Dossier" class="p-1.5 rounded-full text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-colors" id="dossier-close-icon">
+<span class="material-symbols-outlined text-xl">close</span>
+</button>
+</div>
+<div class="p-6 sm:p-8 space-y-6 max-h-[80vh] overflow-y-auto">
+<div class="space-y-2">
+<div class="flex flex-wrap items-center justify-between gap-2">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant" id="dossier-realm">North Atlantic / Arctic Ice Shelf</span>
+<span class="px-2.5 py-0.5 rounded bg-secondary-container/30 font-code-telemetry text-code-telemetry text-secondary font-bold" id="dossier-lattice">Lattice Index: Ψ 0.998</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary tracking-tight" id="dossier-modal-title">The Glistening Stillness of Patience</h3>
+<p class="font-label-md text-label-md text-secondary font-semibold" id="dossier-virtue">Operational Strength: Precision &amp; Focus</p>
+</div>
+<div class="p-4 rounded-lg bg-surface-container-low/70 border border-outline-variant/20 space-y-2">
+<span class="font-code-telemetry text-code-telemetry uppercase tracking-wider text-on-surface-variant block">Mythological &amp; Visual Dossier</span>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed" id="dossier-description"></p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="p-4 rounded-lg bg-surface-container-low/50 border border-outline-variant/20">
+<span class="font-code-telemetry text-code-telemetry uppercase tracking-wider text-secondary block mb-1">Ideal Application</span>
+<p class="font-body-sm text-body-sm text-on-surface" id="dossier-application"></p>
+</div>
+<div class="p-4 rounded-lg bg-surface-container-low/50 border border-outline-variant/20">
+<span class="font-code-telemetry text-code-telemetry uppercase tracking-wider text-secondary block mb-1">Dispatch Status</span>
+<p class="font-body-sm text-body-sm text-on-surface flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span>Standby // Ready for Terminal Summon</span>
+</p>
+</div>
+</div>
+</div>
+<div class="px-6 py-4 bg-surface-container-low border-t border-outline-variant/30 flex flex-wrap items-center justify-end gap-3">
+<button class="px-5 py-2.5 bg-surface-container-lowest text-primary border border-outline-variant/50 font-label-md text-label-md uppercase tracking-wider rounded hover:bg-surface-container-high transition-colors" id="dossier-close-btn">
+        Close Dossier
+      </button>
+<button class="px-5 py-2.5 bg-primary text-on-primary font-label-md text-label-md uppercase tracking-wider rounded hover:bg-primary-container transition-colors shadow-sm" id="dossier-summon-btn">
+        Summon Guardian
+      </button>
+</div>
+</div>
+</div>
+<script>
+  (function () {
+    const guardiansData = {
+      grace: {
+        nodeId: "NODE 01 // GRACE — The Arctic Guardian",
+        realm: "North Atlantic / Arctic Ice Shelf",
+        title: "The Glistening Stillness of Patience",
+        virtue: "Operational Strength: Precision & Focus",
+        description:
+          "Coiled in crystalline turquoise and icy white watercolor, Grace possesses iridescent emerald-green scales that shimmer like compressed Arctic glacier ice. Moving with imperceptible, elegant fluidity, she embodies enduring beauty through stillness—deployed against critical edge-case anomalies, compiler deadlocks, and deep logic bugs.",
+        application: "Debugging, long-term planning, and deep-logic tasks.",
+        lattice: "Lattice Index: Ψ 0.998"
+      },
+      cadence: {
+        nodeId: "NODE 02 // CADENCE — The Antarctic Sentinel",
+        realm: "Southern Ocean / Antarctic Convergence",
+        title: "The Rhythmic Soul of the Deep",
+        virtue: "Operational Strength: Rhythm & Sync",
+        description:
+          "Nestled in swirling deep amethyst and violet ocean washes, Cadence radiates translucent scales with subtle bioluminescence pulsing like an ancient ocean heartbeat. She is the pulse of the great currents, harmonizing runtime schedules, tick rates, and cross-platform synchronization with musical grace.",
+        application: "Real-time data queues, scheduling, and multi-platform synchronization.",
+        lattice: "Lattice Index: λ 0.999"
+      },
+      serenity: {
+        nodeId: "NODE 03 // SERENITY — The Indian Ocean Shepherd",
+        realm: "Indian Ocean / Coral Triangle",
+        title: "The Warmth of Giving & Growth",
+        virtue: "Operational Strength: Optimization & Calm",
+        description:
+          "Immersed in warm sapphire and golden-amber ocean currents, Serenity features sapphire-blue scales with deep bronze and copper undertones. Swimming gently among tropical coral reefs, she nurtures vast system architectures, reducing computational friction and memory bloat.",
+        application: "Horizontal scaling, resource management, and reducing system noise.",
+        lattice: "Lattice Index: Θ 0.996"
+      },
+      guidance: {
+        nodeId: "NODE 04 // GUIDANCE — Mediterranean Mariner",
+        realm: "Mediterranean Ancient Tides",
+        title: "Clear Direction of History & Knowledge",
+        virtue: "Operational Strength: Navigation & Logic",
+        description:
+          "Gracefully coiling within a Mediterranean turquoise sea, Guidance is adorned in sleek polished ruby-red and crimson scales with faint golden ancient mosaic patterns. She commands millennia of precedent, preventing regression bugs and directing teams through the complex tides of architectural history.",
+        application: "Strategic direction, historical context, and baked system rules.",
+        lattice: "Lattice Index: Ω 0.995"
+      },
+      hope: {
+        nodeId: "NODE 05 // HOPE — The Atlantic Voyager",
+        realm: "Mid-Atlantic Open Ocean / Ridge",
+        title: "The Luminous Dawn of New Beginnings",
+        virtue: "Operational Strength: Momentum & Vision",
+        description:
+          "Breaking through the deep oceanic shadows of the Mid-Atlantic, Hope gleams in rich tarnish-proof gold and bronze reflections, radiating warm dawn sunlight into dark waters. She moves fearlessly through treacherous ocean canyons, breaking initial creative blocks and fueling cold-start innovation.",
+        application: "Brainstorming, project launches, and innovative cold starts.",
+        lattice: "Lattice Index: Δ 0.992"
+      },
+      faith: {
+        nodeId: "NODE 06 // FAITH — The Caribbean Drift",
+        realm: "Caribbean Reef Shallows",
+        title: "Unshakable Trust in Inner Truth",
+        virtue: "Operational Strength: Security & Integrity",
+        description:
+          "Drifting effortlessly over sunlit turquoise coral reefs, Faith shimmers in cyan and aquamarine scales catching crystalline sunlight rays. Relying on natural buoyancy rather than force, she threads labyrinthine security policies, validating cryptographic truths and zero-trust boundaries.",
+        application: "Encryption protocols, privacy verification, and ethical AI boundaries.",
+        lattice: "Lattice Index: Α 1.000"
+      },
+      love: {
+        nodeId: "NODE 07 // LOVE — The Pacific Depth",
+        realm: "Deep Pacific / Mariana Trench",
+        title: "The Profound Intensity of Connection",
+        virtue: "Operational Strength: Integration & Synergy",
+        description:
+          "Dwelling in the deep oceanic abyss of the Mariana Trench, Love is coiled in inky midnight-blue watercolor with striking onyx-black scales flecked with brilliant platinum and silver star-like reflections. Illuminated by internal gentle light, she represents the cohesive gravity that binds all disparate APIs.",
+        application: "Holistic UX orchestration, connecting disparate APIs, and system cohesion.",
+        lattice: "Lattice Index: Φ 0.997"
+      }
+    };
+
+    const modal = document.getElementById("guardian-dossier-modal");
+    const nodeIdEl = document.getElementById("dossier-node-id");
+    const realmEl = document.getElementById("dossier-realm");
+    const latticeEl = document.getElementById("dossier-lattice");
+    const titleEl = document.getElementById("dossier-modal-title");
+    const virtueEl = document.getElementById("dossier-virtue");
+    const descEl = document.getElementById("dossier-description");
+    const appEl = document.getElementById("dossier-application");
+    const closeIcon = document.getElementById("dossier-close-icon");
+    const closeBtn = document.getElementById("dossier-close-btn");
+    const summonBtn = document.getElementById("dossier-summon-btn");
+
+    function openDossier(key) {
+      const data = guardiansData[key];
+      if (!data) return;
+      nodeIdEl.textContent = data.nodeId;
+      realmEl.textContent = data.realm;
+      latticeEl.textContent = data.lattice;
+      titleEl.textContent = data.title;
+      virtueEl.textContent = data.virtue;
+      descEl.textContent = data.description;
+      appEl.textContent = data.application;
+
+      modal.classList.remove("hidden");
+      modal.classList.add("flex");
+      modal.setAttribute("aria-hidden", "false");
+      document.body.style.overflow = "hidden";
+    }
+
+    function closeDossier() {
+      modal.classList.add("hidden");
+      modal.classList.remove("flex");
+      modal.setAttribute("aria-hidden", "true");
+      document.body.style.overflow = "";
+    }
+
+    document.querySelectorAll("[data-guardian]").forEach((card) => {
+      card.addEventListener("click", () => {
+        openDossier(card.getAttribute("data-guardian"));
+      });
+    });
+
+    closeIcon?.addEventListener("click", closeDossier);
+    closeBtn?.addEventListener("click", closeDossier);
+    summonBtn?.addEventListener("click", closeDossier);
+
+    modal?.addEventListener("click", (e) => {
+      if (e.target === modal) {
+        closeDossier();
+      }
+    });
+
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && !modal.classList.contains("hidden")) {
+        closeDossier();
+      }
+    });
+  })();
+</script>
+</body></html>

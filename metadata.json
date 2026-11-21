@@ -1,0 +1,6 @@
+{
+  "name": "BABYMONS7ER — The Seven AI Guardians",
+  "description": "The SeaDragon Autonomous Framework: seven specialized AI Guardians navigating modern computational complexity across the Seven Seas.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
