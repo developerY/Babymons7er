@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject, signal } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { MatIconModule } from '@angular/material/icon';
 import { ARCHIVAL_MEDIA, GUARDIANS, GuardianId } from '../../data/guardians.data';
@@ -54,7 +54,7 @@ import { BrandWordmark } from '../../components/brand-wordmark/brand-wordmark';
           </blockquote>
 
           <!-- Action Cluster -->
-          <div class="mt-10 flex flex-wrap items-center justify-center gap-4">
+          <div class="mt-9 flex flex-wrap items-center justify-center gap-4">
             <a
               routerLink="/architecture"
               class="inline-flex items-center gap-2 px-7 py-3.5 bg-primary text-on-primary text-xs font-semibold uppercase tracking-wider rounded hover:bg-primary-container transition-colors duration-200 shadow-sm whitespace-nowrap"
@@ -71,8 +71,33 @@ import { BrandWordmark } from '../../components/brand-wordmark/brand-wordmark';
             </a>
           </div>
 
+          <!-- Archival Living Plate: Sunlit Kelp Sanctuary -->
+          <figure
+            class="mt-11 w-full max-w-[680px] p-2.5 sm:p-3 bg-surface-container-lowest rounded-xl border border-gesso shadow-sm"
+          >
+            <div class="relative w-full aspect-[640/315] rounded-lg overflow-hidden bg-surface-container">
+              <img
+                [src]="livingPlateSrc()"
+                (error)="onLivingPlateError()"
+                alt="Sunlit underwater kelp forest with a blue SeaDragon, dolphin, and swimmer gliding through golden fronds"
+                referrerpolicy="no-referrer"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <figcaption
+              class="pt-2.5 px-1.5 flex flex-wrap items-center justify-between gap-2 text-left"
+            >
+              <span class="font-serif italic text-xs sm:text-sm text-primary">
+                Plate I · Sunlit Kelp Sanctuary
+              </span>
+              <span class="text-[10px] sm:text-[11px] font-semibold uppercase tracking-[0.16em] text-secondary">
+                Archival Living Plate
+              </span>
+            </figcaption>
+          </figure>
+
           <!-- Key Framework Pillars -->
-          <div class="mt-14 w-full grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl text-left">
+          <div class="mt-11 w-full grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl text-left">
             <div class="p-6 rounded-lg bg-surface-container-lowest border border-gesso flex items-start gap-4">
               <div class="p-2.5 rounded bg-secondary-container/30 text-secondary shrink-0">
                 <mat-icon class="!text-[20px]">auto_awesome</mat-icon>
@@ -675,6 +700,11 @@ export class OverviewPage {
   protected readonly ui = inject(GuardianUiState);
   protected readonly media = ARCHIVAL_MEDIA;
 
+  protected readonly livingPlateFallback = '/assets/aistudio/image_6ebb88e9.png';
+  protected readonly livingPlateSrc = signal(
+    'https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQeXmv8SQFJskOOtE9yL01voEE8HWFyRS1ZWnYd6rI-qqDxeE407F05h_amoQ352fpch86qemVBqOh4OxeKKZGo7-dzCCBMyKbCP5AjNSNG_-LJ5SPYpGtnQhAbUrrL68m9nDVi4-nH90T1cdeAuBLF-VhFd_PaMMwOsX02evfMU56c-knmrrI3M9-7R5DRhk_89vlY5LfkDOxtw48THMgB2R7rC1jsM02gdyObpaHw'
+  );
+
   // Match the exact ordering in the Overview Architecture of Virtue table
   protected readonly tableGuardians = [
     GUARDIANS[0], // Grace
@@ -688,6 +718,12 @@ export class OverviewPage {
 
   protected readonly topRowGuardians = GUARDIANS.slice(0, 3);
   protected readonly splitRowGuardians = GUARDIANS.slice(3, 7);
+
+  protected onLivingPlateError(): void {
+    if (this.livingPlateSrc() !== this.livingPlateFallback) {
+      this.livingPlateSrc.set(this.livingPlateFallback);
+    }
+  }
 
   protected openDossier(id: GuardianId): void {
     this.ui.openDossier(id);
