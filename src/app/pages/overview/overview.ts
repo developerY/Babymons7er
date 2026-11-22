@@ -700,10 +700,13 @@ export class OverviewPage {
   protected readonly ui = inject(GuardianUiState);
   protected readonly media = ARCHIVAL_MEDIA;
 
-  protected readonly livingPlateFallback = '/assets/aistudio/image_6ebb88e9.png';
-  protected readonly livingPlateSrc = signal(
-    'https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQeXmv8SQFJskOOtE9yL01voEE8HWFyRS1ZWnYd6rI-qqDxeE407F05h_amoQ352fpch86qemVBqOh4OxeKKZGo7-dzCCBMyKbCP5AjNSNG_-LJ5SPYpGtnQhAbUrrL68m9nDVi4-nH90T1cdeAuBLF-VhFd_PaMMwOsX02evfMU56c-knmrrI3M9-7R5DRhk_89vlY5LfkDOxtw48THMgB2R7rC1jsM02gdyObpaHw'
-  );
+  private readonly livingPlateCandidates = [
+    '/assets/kelp-sanctuary.gif',
+    'https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQeXmv8SQFJskOOtE9yL01voEE8HWFyRS1ZWnYd6rI-qqDxeE407F05h_amoQ352fpch86qemVBqOh4OxeKKZGo7-dzCCBMyKbCP5AjNSNG_-LJ5SPYpGtnQhAbUrrL68m9nDVi4-nH90T1cdeAuBLF-VhFd_PaMMwOsX02evfMU56c-knmrrI3M9-7R5DRhk_89vlY5LfkDOxtw48THMgB2R7rC1jsM02gdyObpaHw',
+    '/assets/aistudio/image_6ebb88e9.png',
+  ];
+  private livingPlateIndex = 0;
+  protected readonly livingPlateSrc = signal(this.livingPlateCandidates[0]);
 
   // Match the exact ordering in the Overview Architecture of Virtue table
   protected readonly tableGuardians = [
@@ -720,8 +723,9 @@ export class OverviewPage {
   protected readonly splitRowGuardians = GUARDIANS.slice(3, 7);
 
   protected onLivingPlateError(): void {
-    if (this.livingPlateSrc() !== this.livingPlateFallback) {
-      this.livingPlateSrc.set(this.livingPlateFallback);
+    if (this.livingPlateIndex < this.livingPlateCandidates.length - 1) {
+      this.livingPlateIndex += 1;
+      this.livingPlateSrc.set(this.livingPlateCandidates[this.livingPlateIndex]);
     }
   }
 
