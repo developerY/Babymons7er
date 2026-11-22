@@ -77,11 +77,18 @@ import { BrandWordmark } from '../../components/brand-wordmark/brand-wordmark';
           >
             <div class="relative w-full aspect-[640/315] rounded-lg overflow-hidden bg-surface-container">
               <img
+                src="/assets/aistudio/image_6ebb88e9.png"
+                alt=""
+                aria-hidden="true"
+                referrerpolicy="no-referrer"
+                class="absolute inset-0 w-full h-full object-cover"
+              />
+              <img
                 [src]="livingPlateSrc()"
                 (error)="onLivingPlateError()"
                 alt="Sunlit underwater kelp forest with a blue SeaDragon, dolphin, and swimmer gliding through golden fronds"
                 referrerpolicy="no-referrer"
-                class="w-full h-full object-cover"
+                class="relative w-full h-full object-cover"
               />
             </div>
             <figcaption
@@ -700,13 +707,8 @@ export class OverviewPage {
   protected readonly ui = inject(GuardianUiState);
   protected readonly media = ARCHIVAL_MEDIA;
 
-  private readonly livingPlateCandidates = [
-    '/assets/kelp-sanctuary.gif',
-    'https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQeXmv8SQFJskOOtE9yL01voEE8HWFyRS1ZWnYd6rI-qqDxeE407F05h_amoQ352fpch86qemVBqOh4OxeKKZGo7-dzCCBMyKbCP5AjNSNG_-LJ5SPYpGtnQhAbUrrL68m9nDVi4-nH90T1cdeAuBLF-VhFd_PaMMwOsX02evfMU56c-knmrrI3M9-7R5DRhk_89vlY5LfkDOxtw48THMgB2R7rC1jsM02gdyObpaHw',
-    '/assets/aistudio/image_6ebb88e9.png',
-  ];
-  private livingPlateIndex = 0;
-  protected readonly livingPlateSrc = signal(this.livingPlateCandidates[0]);
+  private readonly livingPlateFallback = '/assets/aistudio/image_6ebb88e9.png';
+  protected readonly livingPlateSrc = signal('/assets/kelp-sanctuary.gif');
 
   // Match the exact ordering in the Overview Architecture of Virtue table
   protected readonly tableGuardians = [
@@ -723,9 +725,8 @@ export class OverviewPage {
   protected readonly splitRowGuardians = GUARDIANS.slice(3, 7);
 
   protected onLivingPlateError(): void {
-    if (this.livingPlateIndex < this.livingPlateCandidates.length - 1) {
-      this.livingPlateIndex += 1;
-      this.livingPlateSrc.set(this.livingPlateCandidates[this.livingPlateIndex]);
+    if (this.livingPlateSrc() !== this.livingPlateFallback) {
+      this.livingPlateSrc.set(this.livingPlateFallback);
     }
   }
 
