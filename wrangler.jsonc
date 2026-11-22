@@ -1,0 +1,13 @@
+{
+  "name": "babymons7er",
+  "compatibility_date": "2026-11-19",
+  "workers_dev": true,
+  "preview_urls": true,
+  "observability": {
+    "enabled": true
+  },
+  "assets": {
+    "directory": "./dist/app/browser",
+    "not_found_handling": "single-page-application"
+  }
+}
